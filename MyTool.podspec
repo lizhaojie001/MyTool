@@ -17,17 +17,17 @@ Pod::Spec.new do |s|
 
   s.name         = "MyTool"
   s.version      = "0.0.1"
-  s.summary      = "A short description of MyTool."
+  s.summary      = "常用工具."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+   s.description  = '<<-DESC'
+                   
 
-  s.homepage     = "http://EXAMPLE/MyTool"
+  s.homepage     = "https://github.com/lizhaojie001/MyTool"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -52,9 +52,9 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "lizhaojie001" => "252487266@qq.com" }
+  #s.author             = { "lizhaojie001" => "252487266@qq.com" }
   # Or just: s.author    = "lizhaojie001"
-  # s.authors            = { "lizhaojie001" => "252487266@qq.com" }
+    s.authors            = { "lizhaojie001" => "252487266@qq.com" }
   # s.social_media_url   = "http://twitter.com/lizhaojie001"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -63,8 +63,8 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+    #s.platform     = :ios
+    s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/MyTool.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/lizhaojie001/MyTool.git", :tag =>  s.version  }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +90,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  =  "MyTool/*.{h,m}"
+  #s.exclude_files = "MyTool/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -129,7 +129,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+    s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
