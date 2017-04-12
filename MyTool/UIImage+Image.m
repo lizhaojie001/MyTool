@@ -82,9 +82,7 @@
 
     newImage = UIGraphicsGetImageFromCurrentImageContext();
     if(newImage == nil)
-        MYLog(@"could not scale image");
-
-    //pop the context to get back to the default
+         //pop the context to get back to the default
     UIGraphicsEndImageContext();
     return newImage;
 }

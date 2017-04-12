@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MyTool"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "常用工具."
 
   # This description is used to generate tags and improve search results.
@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   #
 
     #s.platform     = :ios
-    s.platform     = :ios, "9.0"
+    s.platform     = :ios, "6.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
